@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projeto-databind';
+
+  numero: number;
+  escolher(){
+    this.numero=Math.floor(Math.random()*100)+1;
+  }
+
 }
