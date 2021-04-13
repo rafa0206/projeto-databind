@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   numero: number;
-  escolher(){
-    this.numero=Math.floor(Math.random()*100)+1;
+  escolher (){
+  this.numero = Math.floor(Math.random() * 100) + 1;
   }
-
 }

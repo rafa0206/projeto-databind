@@ -1,15 +1,11 @@
 <div class="container my-3 border p-3">
-  <form>
-    <div class="form-group">
-      <label for="nomeInput">Nome</label>
-      <input type="nome" class="form-control" id="nomeInput" placeholder="Digite um nome" #nomeInput>
-    </div>
+  <div class="form-group">
+    <label for="numeroInput">Escolha um número</label>
+    <input type="numero" [(ngModel)]="numero" class="form-control" id="numeroInput" placeholder="Escolha um número"
+      #nomeInput>
+    <div class="alert alert-primary mt-3 p-3 text-center">{{numero}}</div>
+  </div>
+  <button type="button" (click)="escolher()" class="btn btn-primary btn-block">Escolher para
+    mim</button>
 
-    <button type="button" class="btn btn-primary btn-
-  block" (click)="adicionar(nomeInput)">Adicionar</button>
-    <div class="alert alert-primary mt-3 p-3" [hidden]="esconderCaixa">
-      Nome: {{nome}}
-    </div>
-  </form>
-</div>
 
